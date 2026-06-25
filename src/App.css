@@ -1,0 +1,219 @@
+@font-face {
+  font-family: "Deathridge Demo";
+  src: url("../public/Deathridge Demo.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "La Raimunda";
+  src: url("../public/La Raimunda.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "Tarif Arabic Regular";
+  src: url("../public/TarifArabic-Regular.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "Tarif Arabic Bold";
+  src: url("../public/TarifArabic-Bold.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: "Road Rage";
+    src: url("../public/Road_Rage.otf") format("opentype");
+}
+
+.tracker {
+  width: 500px;
+  height: 100px;
+  background-color: #111111;
+}
+
+.tracker p {
+  color: white;
+  margin: 0;
+}
+
+.streamersPage {
+  width: 100%;
+  display: flex;
+  background-color: #111111;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.trackerStreamer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100px;
+}
+
+.trackerStreamer .avatar {
+  height: 80px;
+  border-radius: 50%;
+}
+
+.trackerStreamer p {
+  font-size: 28px;
+  margin-left: 20px;  
+  color: #F4E9D8;  
+  font-family: 'Road Rage', 'Segeo UI', 'Roboto', sans-serif;
+}
+
+.trackerStreamer .trackerStreamerAmount {
+  margin-left: auto;
+  margin-right: 20px;
+  color: #e800a8;
+}
+
+
+.streamer {
+  width: 400px;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.streamer p {
+  color: #F4E9D8;
+}
+
+.streamer .avatar {
+  height: 60px;
+  border-radius: 50%;
+}
+
+.streamer .current {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.streamer .donationsGoals {
+    width: 100%;
+}
+
+.streamer .donationsGoals p {
+    color: #F4E9D8;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.streamer .donationsGoals .currentGoal
+{
+    font-weight: bold;
+    text-align: center;
+}
+
+.streamer .donationsGoals .currentGoalName {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.currentGoalName {
+  text-align: center;
+}
+
+.streamer .donationsGoals .currentGoalBar, .tracker .currentGoalBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tracker .currentGoalBar {
+  margin-top: 10px;
+}
+
+.streamer .currentGoalBar .currentGoalProgress {
+    height: 20px;
+    border-radius: 10px;
+    background: #F4E9D8;
+}
+
+.tracker .currentGoalProgress {
+    height: 25px;
+    border-radius: 10px;
+    background: #F4E9D8;
+}
+
+.tracker .currentGoalPrice {
+  color: #F4E9D8;  
+  font-size: 18px;
+  font-family: 'Deathridge Demo', 'Segeo UI', 'Roboto', sans-serif;
+  margin-left: 10px;
+}
+
+.tracker .trackerGoal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.tracker .trackerGoalLabel {
+  color: #F4E9D8;
+  font-size: 20px;
+  font-family: 'Deathridge Demo', 'Segeo UI', 'Roboto', sans-serif;
+}
+
+.streamer .sesDonationsGoals {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.streamer .sesDonationsGoals p {
+    font-size: 18px;
+}
+
+.streamer .sesDonationsGoals button {
+    height: 30px;
+    width: 30px;
+}
+
+.currentGoalProgressFill {
+    border-radius: 10px;
+}
+
+.streamer .currentGoalBar .currentGoalPrice {
+    margin-left: 10px;
+}
+
+.streamer .listGoals {
+    max-height: 180px;
+    overflow: scroll;
+    margin: 0;
+    width: 100%;
+    padding-left: 0;
+}
+
+.streamer .listGoals li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.streamer .listGoals li p {
+    font-size: 16px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+
+
+.streamer .listGoals li .amount {
+    width: 90px;
+    text-align: right;
+}
+
+.streamer .listGoals li .validate {
+    color: green;
+}
